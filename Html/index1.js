@@ -18,9 +18,9 @@
 // console.log(reversedString1);
 
 //3.Using the 'split' and 'reduceRight'
-let myString = "Hello, World!";
+// let myString = "Hello, World!";
 
-let reversedString = myString.split('').
-reduceRight((acc,char) => acc + char, "")
+// let reversedString = myString.split('').
+// reduceRight((acc,char) => acc + char, "")
 
-console.log(reversedString)
+// console.log(reversedString)
