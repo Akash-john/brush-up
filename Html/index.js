@@ -1,4 +1,6 @@
 //1.How to reverse an array
+
+
 //1.1 reverse an array (reverse) modified
 //the original Array with out create new Array
 
@@ -26,3 +28,36 @@
 // let reversedArray1 = myArr1.reduce((acc,current ) => [current,...acc],[])
 // console.log(myArr1);
 // console.log(reversedArray1)
+
+
+//2. Find the Maximum and Minimum Element
+
+// function findMinMax(arr){
+//     if(arr.length === 0){
+//         return "Array is Empty"
+//     }
+
+//     let min = arr[0];
+//     let max = arr[0];
+
+//     for(let i=1; i < arr.length; i++){
+//         if( arr[i] > max)
+//         {
+//             max = arr[i]
+//         }else if(arr[i] < min)
+//         {
+//             min = arr[i]
+//         }
+//     }
+//     return{
+//         min,
+//         max
+//     }
+// }
+ 
+
+// const arr = [1,2,3,4,5,22,-1];
+
+// const result = findMinMax(arr)
+
+// console.log(result)
