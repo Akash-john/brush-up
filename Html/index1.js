@@ -68,3 +68,48 @@
 // const result = isPalindrome("madam")
 
 // console.log(result)
+
+
+//////3.count vowels and Consonants
+
+// function countVowelsAndConsonants(str){
+//     let vowelCount = 0;
+//     let consonantCount = 0;
+
+//     const vowels = "aeiouAEIOU";
+
+//     for(let i=0; i<str.length;i++){
+//         const char =  str[i]
+//         if(vowels.includes(char)){
+//             vowelCount++;
+//         }else if(/[a-zA-Z]/g.test(char)){
+//             consonantCount++;
+//         }
+//     }
+
+//     return {
+//         vowelCount,consonantCount
+//     }
+// }
+
+// let myString = "Hello, World!"
+
+// const result = countVowelsAndConsonants(myString)
+// console.log(result)
+
+//////////3.2 Using Array Methods
+
+// function countVowelsAndConsonants(str){
+//     const vowelCount = str.split('').filter((char)=> 'aeiouAEIOU'.includes(char)).length
+//     const consonantCount = str.split('').filter((char)=> /[a-zA-Z]/.test(char)).length
+//     return{
+//         vowelCount,
+//         consonantCount
+//     }
+// }
+
+// let str = "Hello, World!"
+// const result = countVowelsAndConsonants(str)
+
+// console.log(result)
+
