@@ -61,3 +61,134 @@
 // const result = findMinMax(arr)
 
 // console.log(result)
+
+
+
+//////3.Find Sum of Array Elements
+///3.1 using For Loop 
+
+// function sumArray(arr){
+//     let sum = 0;
+
+//     for(let i=0; i<arr.length; i++){
+//         sum += arr[i]
+//     }
+
+//     return sum;
+// }
+
+// let arr = [1,2,3,4,5]
+// const result = sumArray(arr)
+// console.log(result)
+
+//3.2 Using the 'ForEach' Method.
+
+// function sumArray(arr){
+//     let sum = 0;
+//     arr.forEach(function(num){
+//         sum += num;
+//     })
+
+//     return sum;
+
+// }
+
+//  let arr = [1,2,3,4,5]
+//  const result = sumArray(arr)
+//  console.log(result)
+
+
+//3.3 Using the "reduce" Method:
+// function sumArray(arr){
+//     const result = arr.reduce(function(acc,num){
+//        return acc + num
+//     },0)
+
+//     return result;
+// }
+
+// let arr = [1,2,3,4,5]
+// const result = sumArray(arr)
+
+// console.log(result)
+
+
+//3.4 Using the `eval` Function
+
+// function sumArray(arr){
+//     return eval(arr.join('+'))
+// }
+
+// let myArr = [1,2,3,4,5]
+// console.log(sumArray(myArr))
+
+
+
+//////////////////////////////////////////////
+////////4.Remove Duplicates from an Array of Elements...
+///4.1 Using `set` object in javascript 
+// it removes duplicate value automatically..
+//array.from()
+
+// function removeDuplicates(arr){
+//     return Array.from(new Set(arr));
+// }
+
+// let arrayWithDuplicates = [1,2,3,4,1,2,5];
+// let arrayWithoutDuplicates = removeDuplicates(arrayWithDuplicates)
+
+// console.log(arrayWithoutDuplicates)
+
+////4.2 Using filter and IndexOf
+
+// function removeDuplicates(arr){
+//     return arr.filter((value,idx, self)=>{
+//         return self.indexOf(value) === idx
+//     })
+// }
+
+// let arrayWithDuplicates = [1,2,3,4,1,2,5];
+// let arrayWithoutDuplicates = removeDuplicates(arrayWithDuplicates)
+
+// console.log(arrayWithoutDuplicates)
+
+
+
+////4.3 Using Reduce Method....
+
+//     function removeDuplicates(array){
+//         const removeDuplicate = array.reduce((uniqueArray, currentItem)=>{
+//             if(!uniqueArray.includes(currentItem)){
+//                 uniqueArray.push(currentItem)
+//             }
+//             return uniqueArray;
+//         },[])
+        
+//         return removeDuplicate;
+//     }
+
+//     let arrayWithDuplicates = [1,2,3,4,1,2,5];
+// let arrayWithoutDuplicates = removeDuplicates(arrayWithDuplicates)
+
+// console.log(arrayWithoutDuplicates)
+
+///4.4 Using For Loop we can remove the Duplicates from an Array...
+
+
+// function removeDuplicates(arr){
+//     let uniqueArray = [];
+
+//     for(let i=0; i< arr.length; i++){
+//         const element = arr[i]
+//         if(!uniqueArray.includes(element)){
+//             uniqueArray.push(element)
+//         }
+//     }
+
+//     return uniqueArray;
+// }
+
+//     let arrayWithDuplicates = [1,2,3,4,1,2,5];
+// let arrayWithoutDuplicates = removeDuplicates(arrayWithDuplicates)
+
+// console.log(arrayWithoutDuplicates)
