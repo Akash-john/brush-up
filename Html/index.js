@@ -192,3 +192,36 @@
 // let arrayWithoutDuplicates = removeDuplicates(arrayWithDuplicates)
 
 // console.log(arrayWithoutDuplicates)
+
+
+///5.Find the Missing Number in a Given Integer array
+
+//5.1 using XOR method and for loop
+function findMissingNo(arr){
+    let n = arr.length + 1 //since one number is missing
+    let xor1 = arr[0] //first element
+    let xor2 = 1
+
+    //XOR all array elements 
+
+    for(let i = 1; i < arr.length ;i++){
+        xor1 ^= arr[i]
+    }
+
+
+    //Xor all numbers from 1 to n 
+
+    for(let i=2; i<=n; i++){
+        xor2 ^= i
+    }
+    
+    //xoring and Xor1 and xor2 will give the missing number
+
+    return xor1 ^ xor2;
+}
+
+let arr = [1,2,4,5,6,7]
+
+const result = findMissingNo(arr)
+
+console.log(result)
