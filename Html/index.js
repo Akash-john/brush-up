@@ -197,31 +197,59 @@
 ///5.Find the Missing Number in a Given Integer array
 
 //5.1 using XOR method and for loop
-function findMissingNo(arr){
-    let n = arr.length + 1 //since one number is missing
-    let xor1 = arr[0] //first element
-    let xor2 = 1
+// function findMissingNo(arr){
+//     let n = arr.length + 1 //since one number is missing
+//     let xor1 = arr[0] //first element
+//     let xor2 = 1
 
-    //XOR all array elements 
+//     //XOR all array elements 
 
-    for(let i = 1; i < arr.length ;i++){
-        xor1 ^= arr[i]
-    }
+//     for(let i = 1; i < arr.length ;i++){
+//         xor1 ^= arr[i]
+//     }
 
 
-    //Xor all numbers from 1 to n 
+//     //Xor all numbers from 1 to n 
 
-    for(let i=2; i<=n; i++){
-        xor2 ^= i
-    }
+//     for(let i=2; i<=n; i++){
+//         xor2 ^= i
+//     }
     
-    //xoring and Xor1 and xor2 will give the missing number
+//     //xoring and Xor1 and xor2 will give the missing number
 
-    return xor1 ^ xor2;
-}
+//     return xor1 ^ xor2;
+// }
 
-let arr = [1,2,4,5,6,7]
+// let arr = [1,2,4,5,6,7]
 
-const result = findMissingNo(arr)
+// const result = findMissingNo(arr)
 
-console.log(result)
+// console.log(result)
+
+
+
+//////6.Find a peak element which is not smaller than its neighbors
+
+// function findPeakElement(nums){
+//     //assigning two pointers in the both end.
+//     let left = 0;
+//     let right = nums.length-1;
+
+//     while(left < right){
+//         let mid = Math.floor((left+right)/2)
+
+//         if(nums[mid] > nums[mid+1]){
+//             right = mid;
+//         }else{
+//             left = mid + 1;
+//         }
+//     }
+
+//     return left;
+// }
+
+// let arr = [1,2,5,6,3]
+
+// const result = findPeakElement(arr)
+
+// console.log(`${arr[result]} is the Peak Element : and it's PeakIndex ${result}`)
